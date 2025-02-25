@@ -273,7 +273,7 @@ print("MPL Finance installed successfully!")</code></pre>
 
             data.index = pd.to_datetime(data.index)
             mpf.plot(data, type='candle', volume=True, style='charles')</code></pre>
-        <img src="C:/Users/kshit/Desktop/datset/candlestick.png" alt="Candlestick Chart" />
+        <img src="https://github.com/ksawesome/Blog/blob/18ad78704dc52dfbbaf0cc7a2e02c797692b6921/candlestick.png" alt="Candlestick Chart" />
         <p>This code snippet converts the index to a DatetimeIndex and then plots a candlestick chart with volume bars using the “charles” style.</p>
         <p>MPL Finance installed and set up, we are now ready to explore its powerful visualization capabilities! In the next sections, we will dive deeper into customization, advanced charting techniques, and real-world use cases.</p>
 
@@ -287,32 +287,32 @@ print("MPL Finance installed successfully!")</code></pre>
             mpf.plot(data, type='candle', style='charles')  # Candlestick chart
             mpf.plot(data, type='ohlc', style='charles')    # OHLC chart
         </code></pre>
-        <img src="C:/Users/kshit/Desktop/datset/AAPL_candlestick.png" alt="Candlestick Chart" />
-        <img src="C:/Users/kshit/Desktop/datset/AAPL_ohlc.png" alt="Candlestick Chart" />
+        <img src="https://github.com/ksawesome/Blog/blob/18ad78704dc52dfbbaf0cc7a2e02c797692b6921/AAPL_candlestick.png" alt="Candlestick Chart" />
+        <img src="https://github.com/ksawesome/Blog/blob/18ad78704dc52dfbbaf0cc7a2e02c797692b6921/AAPL_ohlc.png" alt="Candlestick Chart" />
         <p>These charts provide a visual representation of price movements, making it easier to identify trends and patterns.</p>
         
         <h3>2. Volume Overlay</h3>
         <p>Volume bars can be displayed along with price charts to analyze market activity.</p>
         <pre><code class="language-python">mpf.plot(data, type='candle', volume=True, style='charles')</code></pre>
-        <img src="C:/Users/kshit/Desktop/datset/AAPL_candlestick_volume.png" alt="Candlestick Chart" />
+        <img src="https://github.com/ksawesome/Blog/blob/18ad78704dc52dfbbaf0cc7a2e02c797692b6921/AAPL_candlestick_volume.png" alt="Candlestick Chart" />
         <p>Volume bars help in understanding the buying and selling pressure in the market.</p>
 
         <h3>3. Moving Averages & Technical Indicators</h3>
         <p>Users can overlay moving averages and other technical indicators on the chart.</p>
         <pre><code class="language-python">mpf.plot(data, type='candle', addplot=[mpf.make_addplot(data['Close'].rolling(window=20).mean())])</code></pre>
-        <img src="C:/Users/kshit/Desktop/datset/AAPL_candlestick_sma.png" alt="Candlestick Chart" />
+        <img src="https://github.com/ksawesome/Blog/blob/18ad78704dc52dfbbaf0cc7a2e02c797692b6921/AAPL_candlestick_sma.png" alt="Candlestick Chart" />
         <p>In this example, a 20-day Simple Moving Average (SMA) is plotted on the candlestick chart.</p>
 
         <h3>4. Customizable Styles</h3>
         <p>MPL Finance provides several built-in styles such as ‘charles’, ‘yahoo’, ‘blueskies’, and allows custom color schemes.</p>
         <pre><code class="language-python">mpf.plot(data, type='candle', style='yahoo')</code></pre>
-        <img src="C:/Users/kshit/Desktop/datset/AAPL_candlestick_yahoo.png" alt="Candlestick Chart" />
+        <img src="https://github.com/ksawesome/Blog/blob/18ad78704dc52dfbbaf0cc7a2e02c797692b6921/AAPL_candlestick_yahoo.png" alt="Candlestick Chart" />
         <p>Users can choose a style that suits their preferences or create custom styles using Matplotlib.</p>
 
         <h3>5. Multiple Timeframes</h3>
         <p>MPL Finance supports plotting multiple timeframes on the same chart.</p>
         <pre><code class="language-python">mpf.plot(data, type='candle', volume=True, style='charles', mav=(10, 20, 50))</code></pre>
-        <img src="C:/Users/kshit/Desktop/datset/AAPL_candlestick_mav.png" alt="Candlestick Chart" />
+        <img src="https://github.com/ksawesome/Blog/blob/18ad78704dc52dfbbaf0cc7a2e02c797692b6921/AAPL_candlestick_mav.png" alt="Candlestick Chart" />
         <p>Users can plot multiple moving averages with different time periods on the same chart.</p>
 
         <h3>6. Real-Time Data Streaming</h3>
@@ -323,7 +323,7 @@ print("MPL Finance installed successfully!")</code></pre>
             data = yf.download('AAPL', period='1d', interval='1m')
             mpf.plot(data, type='candle', volume=True, style='charles')</code></pre>
         <p>This code snippet fetches real-time data for Apple (AAPL) with a 1-minute interval and plots a candlestick chart.</p>
-        <img src="C:/Users/kshit/Desktop/datset/AAPL_candlestick.png" alt="Candlestick Chart" />
+        <img src="https://github.com/ksawesome/Blog/blob/18ad78704dc52dfbbaf0cc7a2e02c797692b6921/AAPL_candlestick.png" alt="Candlestick Chart" />
         <p>Users can update the chart in real-time by fetching new data and replotting the chart.</p>
 
         <h3>7. Interactive Charts</h3>
@@ -335,7 +335,7 @@ print("MPL Finance installed successfully!")</code></pre>
         <p>MPL Finance supports intraday and live data, allowing users to plot charts with high-frequency data.</p>
         <pre><code class="language-python">data_intraday = yf.download('AAPL', period='1d', interval='5m')
             mpf.plot(data_intraday, type='candle', style='charles')</code></pre>
-        <img src="C:/Users/kshit/Desktop/datset/AAPL_candlestick.png" alt="Candlestick Chart" />
+        <img src="https://github.com/ksawesome/Blog/blob/18ad78704dc52dfbbaf0cc7a2e02c797692b6921/AAPL_candlestick.png" alt="Candlestick Chart" />
         <p>Users can analyze intraday price movements and make informed decisions based on real-time data.</p>
         
         <h3>9. Saving Charts as Images</h3>
